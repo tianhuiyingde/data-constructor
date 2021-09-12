@@ -1,0 +1,24 @@
+POST http://localhost:8989/game/create
+Content-Type: application/json
+
+{"name" :"t333sss553","templateId" :392}
+
+###
+
+> {%
+// client.test("test-hello", function() {
+//   client.log("测试/hello接口");
+//   client.log(response.body);
+//   client.log(JSON.stringify(response.body)); // 虽然idea没有提示JSON，但是可以用
+//   client.assert(response.status === 200, "返回码不是200");
+//   client.assert(response.body === "Hello World", "结果验证失败");
+// });
+%}
+###
+
+POST http://localhost:8989/game/publish
+Content-Type: application/json
+
+{"subject" :"1","schoolsection" :"1"}
+
+###

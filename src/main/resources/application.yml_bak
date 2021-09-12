@@ -1,0 +1,49 @@
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    com:
+      aixuexi:
+        ol: debug
+      alibaba:
+        dubbo: info
+    org:
+      springframework: info
+    root: info
+server:
+  error:
+    path: /error
+  port: 8881
+  servlet:
+    context-path: /
+    session:
+      timeout: 30m
+  tomcat:
+    basedir: /tmp
+    max-threads: 500
+    uri-encoding: utf-8
+spring:
+  datasource:
+    password: Px^nG)wB`%~ZM
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://60.205.217.5:3306/ztest
+    username: aixuexi
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: true
+    time-zone: GMT+8
+  main:
+    allow-bean-definition-overriding: true
+
+
+serverEnv: dev
+
+user:
+  username: tianhuiying
+  password: Thuiy123
